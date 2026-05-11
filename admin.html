@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Studio Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header" id="top">
+        <div class="header__inner container">
+          <a class="brand" href="index.html" aria-label="Atelier Studio home">
+            <span class="brand__name">Atelier</span>
+            <span class="brand__sub">STUDIO</span>
+          </a>
+          <nav class="menu" aria-label="Primary navigation">
+            <a class="menu__link" href="index.html">Home</a>
+            <a class="menu__link" href="/admin">Admin</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section--alt" id="section-admin" aria-label="Section manager">
+          <div class="container section__head">
+            <div class="kicker">Dashboard</div>
+            <h2 class="h2">Template Content Manager</h2>
+            <p class="lead">
+              Manage stored section content with create, read, update, and delete operations. Select a section to edit, or create a new one directly.
+            </p>
+          </div>
+
+          <div class="container admin-panel-grid">
+            <div class="admin-panel admin-panel--form">
+              <label class="field">
+                <span class="field__label">Select section</span>
+                <select id="section-select" class="field__input">
+                  <option value="" disabled selected>Select a section</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Section key</span>
+                <input id="section-key" class="field__input" type="text" placeholder="hero" />
+              </label>
+              <label class="field">
+                <span class="field__label">Section title</span>
+                <input id="section-name" class="field__input" type="text" placeholder="Hero Section" />
+              </label>
+              <label class="field">
+                <span class="field__label">Section payload (JSON)</span>
+                <textarea id="section-data" class="field__input field__textarea" rows="10">{}</textarea>
+              </label>
+              <div class="button-row">
+                <button id="section-load" class="btn btn--ghost btn--pill" type="button">Refresh</button>
+                <button id="section-new" class="btn btn--ghost btn--pill" type="button">New entry</button>
+                <button id="section-save" class="btn btn--gold btn--pill" type="button">Save</button>
+                <button id="section-delete" class="btn btn--ghost btn--pill" type="button">Delete</button>
+              </div>
+              <div id="section-message" class="section-message"></div>
+            </div>
+
+            <div class="admin-panel admin-panel--list">
+              <h3>Available sections</h3>
+              <div id="section-list"></div>
+              <div class="admin-help">
+                <h4>How it works</h4>
+                <p>Choose a section from the dropdown, edit the values, then click Save. Use New to create a section or Delete to remove the selected section.</p>
+                <ul>
+                  <li><strong>Refresh</strong>: reload section list from the database.</li>
+                  <li><strong>Select</strong>: choose a section to edit its key, name, and JSON data.</li>
+                  <li><strong>Save</strong>: updates an existing section or creates a new one.</li>
+                  <li><strong>Delete</strong>: removes the selected section from the database.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

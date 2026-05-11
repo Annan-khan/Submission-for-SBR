@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Studio — Interior Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header" id="top">
+        <div class="header__inner container">
+          <a class="brand" href="#top" aria-label="Atelier Studio home">
+            <span class="brand__name">Atelier</span>
+            <span class="brand__sub">STUDIO</span>
+          </a>
+
+          <nav class="menu" aria-label="Primary navigation">
+            <a class="menu__link" href="#about">About</a>
+            <a class="menu__link" href="#portfolio">Portfolio</a>
+            <a class="menu__link" href="#services">Services</a>
+            <a class="menu__link" href="#pricing">Pricing</a>
+            <a class="menu__link" href="#blog">Blog</a>
+            <a class="menu__link" href="#contact">Contact</a>
+          </nav>
+
+          <div class="header__actions">
+            <button class="icon-btn" type="button" aria-label="Toggle theme" data-theme-toggle>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <path
+                  d="M21 12.8A7.9 7.9 0 0 1 11.2 3a7 7 0 1 0 9.8 9.8Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <a class="btn btn--pill btn--consult" href="#contact">Book Consultation</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-drawer" data-mobile-drawer>
+          <nav class="mobile-menu" aria-label="Mobile navigation">
+            <a class="mobile-menu__link" href="#about">About</a>
+            <a class="mobile-menu__link" href="#portfolio">Portfolio</a>
+            <a class="mobile-menu__link" href="#services">Services</a>
+            <a class="mobile-menu__link" href="#pricing">Pricing</a>
+            <a class="mobile-menu__link" href="#blog">Blog</a>
+            <a class="mobile-menu__link" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-label="Hero">
+          <div class="hero__bg" role="img" aria-label="Interior design hero background"></div>
+          <div class="container hero__inner">
+
+
+            <h1 class="hero__title">
+              Extraordinary Experiences<br/>
+
+            </h1>
+            <p class="hero__subtitle">
+              Award-winning interior design studio crafting timeless, sophisticated environments
+              for discerning clients across residential, commercial, and hospitality sectors.
+            </p>
+
+            <div class="pill-row" aria-label="Categories">
+              <button class="pill is-active" type="button" data-banner="bg1">Residential <span>(18)</span></button>
+              <button class="pill" type="button" data-banner="bg2">Commercial <span>(12)</span></button>
+              <button class="pill" type="button" data-banner="bg3">Hospitality <span>(9)</span></button>
+              <button class="pill" type="button" data-banner="bg4">Retail <span>(8)</span></button>
+            </div>
+
+            <div class="hero__cta">
+              <a class="btn btn--gold" href="#portfolio">View Portfolio</a>
+              <a class="btn btn--ghost" href="#contact">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats" aria-label="Key stats">
+          <div class="container stats__grid">
+            <div class="stat">
+              <div class="stat__num">47+</div>
+              <div class="stat__label">Projects Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">15+</div>
+              <div class="stat__label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">12</div>
+              <div class="stat__label">Design Awards</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">100%</div>
+              <div class="stat__label">Client Satisfaction</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="services" aria-label="Services">
+          <div class="container section__head">
+            <div class="kicker">Our Expertise</div>
+            <h2 class="h2">Comprehensive Design Services</h2>
+            <p class="lead">
+              From concept to completion, we offer a full spectrum of interior design services tailored
+              to elevate every space.
+            </p>
+          </div>
+
+          <div class="container grid-3 cards">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">⌂</div>
+              <h3 class="card__title">Residential Design</h3>
+              <p class="card__text">
+                Creating personalized living environments that reflect your lifestyle, taste, and the way you truly live in your home.
+              </p>
+              <a class="card__link" href="#">Learn more <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">▦</div>
+              <h3 class="card__title">Commercial Design</h3>
+              <p class="card__text">
+                Designing productive, inspiring workspaces that strengthen your brand identity and enhance employee wellbeing.
+              </p>
+              <a class="card__link" href="#">Learn more <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">✦</div>
+              <h3 class="card__title">Hospitality Design</h3>
+              <p class="card__text">
+                Crafting memorable guest experiences through thoughtful spatial design for hotels, restaurants, and boutique venues.
+              </p>
+              <a class="card__link" href="#">Learn more <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">⬡</div>
+              <h3 class="card__title">Color &amp; Material Consulting</h3>
+              <p class="card__text">
+                Expert guidance on color palettes, finishes, and material selections that create cohesive, harmonious interiors.
+              </p>
+              <a class="card__link" href="#">Learn more <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">▣</div>
+              <h3 class="card__title">Space Planning</h3>
+              <p class="card__text">
+                Optimizing layouts for functionality and flow, ensuring every square foot serves a purpose while maintaining aesthetic balance.
+              </p>
+              <a class="card__link" href="#">Learn more <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">∿</div>
+              <h3 class="card__title">Renovation Management</h3>
+              <p class="card__text">
+                Full-service renovation oversight from demolition to final styling, coordinating contractors and ensuring quality at every stage.
+              </p>
+              <a class="card__link" href="#">Learn more <span aria-hidden="true">›</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--alt" id="portfolio" aria-label="Portfolio">
+          <div class="container section__head">
+            <div class="kicker">Our Work</div>
+            <h2 class="h2">Featured Projects</h2>
+            <p class="lead">
+              A curated selection of our most transformative design projects across residential and commercial spaces.
+            </p>
+          </div>
+
+          <div class="container projects">
+            <article class="project project--tall">
+              <img
+                src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80"
+                alt="Modern bright living room"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="project__overlay">
+                <div class="project__tag">Residential</div>
+                <div class="project__title">Sunlit Loft</div>
+              </div>
+            </article>
+            <article class="project">
+              <img
+                src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80"
+                alt="Industrial office interior"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="project__overlay">
+                <div class="project__tag">Commercial</div>
+                <div class="project__title">Wynwood Gallery</div>
+              </div>
+            </article>
+            <article class="project project--wide">
+              <img
+                src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1600&q=80"
+                alt="Modern home exterior"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="project__overlay">
+                <div class="project__tag">Architecture</div>
+                <div class="project__title">Courtyard House</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="container section__foot">
+            <a class="btn btn--gold btn--pill" href="#">View All Projects <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Process" id="about">
+          <div class="container section__head">
+            <div class="kicker">Our Process</div>
+            <h2 class="h2">How We Work</h2>
+            <p class="lead">
+              A collaborative four-step journey from initial vision to final reveal, ensuring every detail reflects your unique story.
+            </p>
+          </div>
+
+          <div class="container timeline">
+            <div class="step">
+              <div class="step__dot">01</div>
+              <div class="step__content">
+                <h3 class="step__title">Consult</h3>
+                <p class="step__text">
+                  We begin with an in-depth conversation to understand your vision, lifestyle, and goals. This discovery phase shapes every decision that follows.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__dot">02</div>
+              <div class="step__content">
+                <h3 class="step__title">Design</h3>
+                <p class="step__text">
+                  Our team develops detailed concept boards, floor plans, 3D renderings, and material palettes that bring your vision to life before any work begins.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__dot">03</div>
+              <div class="step__content">
+                <h3 class="step__title">Refine</h3>
+                <p class="step__text">
+                  Through iterative reviews and feedback sessions, we fine-tune every element until the design perfectly captures your aesthetic.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__dot">04</div>
+              <div class="step__content">
+                <h3 class="step__title">Execute</h3>
+                <p class="step__text">
+                  We manage the entire implementation process, coordinating with artisans, contractors, and suppliers to deliver a flawless final result.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--alt" aria-label="Testimonials">
+          <div class="container section__head">
+            <div class="kicker">Client Stories</div>
+            <h2 class="h2">What Our Clients Say</h2>
+            <p class="lead">
+              Hear from homeowners and businesses who have experienced the Atelier Studio difference.
+            </p>
+          </div>
+
+          <div class="container slider" data-slider>
+            <div class="slider__track" data-slider-track>
+              <article class="t-card">
+                <div class="stars" aria-label="5 star rating">★★★★★</div>
+                <p class="t-card__text">
+                  “From concept to completion, the Atelier team was incredibly professional and creative. They reimagined our hotel lobby and the guest feedback has been overwhelmingly positive ever since.”
+                </p>
+                <div class="t-card__name">Jonathan Wright</div>
+                <div class="t-card__role">GM, The Azure Hotel</div>
+              </article>
+              <article class="t-card">
+                <div class="stars" aria-label="5 star rating">★★★★★</div>
+                <p class="t-card__text">
+                  “I was nervous about renovating our mid-century home, but Atelier preserved its character while making it completely functional for modern living. The result exceeded every expectation.”
+                </p>
+                <div class="t-card__name">Diana Rossetti</div>
+                <div class="t-card__role">Coconut Grove Homeowner</div>
+              </article>
+              <article class="t-card">
+                <div class="stars" aria-label="5 star rating">★★★★★</div>
+                <p class="t-card__text">
+                  “Atelier designed our flagship retail store and the results speak for themselves. Foot traffic increased by 40 percent in the first quarter after the redesign. Truly transformative work.”
+                </p>
+                <div class="t-card__name">Nathan Park</div>
+                <div class="t-card__role">Founder, Maison Luxe</div>
+              </article>
+            </div>
+
+            <div class="slider__controls" aria-label="Testimonials controls">
+              <button class="round" type="button" aria-label="Previous" data-slider-prev>‹</button>
+              <div class="dots" data-slider-dots aria-label="Pagination"></div>
+              <button class="round" type="button" aria-label="Next" data-slider-next>›</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Awards">
+          <div class="container section__head">
+            <div class="kicker">Recognition</div>
+            <h2 class="h2">Awards &amp; Accolades</h2>
+            <p class="lead">
+              Our commitment to design excellence has been recognized by the industry's most prestigious institutions.
+            </p>
+          </div>
+
+          <div class="container grid-3 awards">
+            <article class="award">
+              <div class="award__icon">✦</div>
+              <div class="award__title">Best Residential Design</div>
+              <div class="award__meta">ASID Design Excellence</div>
+              <div class="award__year">2025</div>
+            </article>
+            <article class="award">
+              <div class="award__icon">✦</div>
+              <div class="award__title">Hospitality Design Award</div>
+              <div class="award__meta">HD Awards</div>
+              <div class="award__year">2025</div>
+            </article>
+            <article class="award">
+              <div class="award__icon">✦</div>
+              <div class="award__title">Innovation in Commercial Design</div>
+              <div class="award__meta">IIDA</div>
+              <div class="award__year">2024</div>
+            </article>
+            <article class="award">
+              <div class="award__icon">✦</div>
+              <div class="award__title">Emerging Studio of the Year</div>
+              <div class="award__meta">Architectural Digest</div>
+              <div class="award__year">2024</div>
+            </article>
+            <article class="award">
+              <div class="award__icon">✦</div>
+              <div class="award__title">Sustainable Design Leader</div>
+              <div class="award__meta">USGBC</div>
+              <div class="award__year">2023</div>
+            </article>
+            <article class="award">
+              <div class="award__icon">✦</div>
+              <div class="award__title">Top 50 Interior Designers</div>
+              <div class="award__meta">Luxe Interiors + Design</div>
+              <div class="award__year">2023</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--alt" aria-label="FAQ" id="pricing">
+          <div class="container section__head">
+            <div class="kicker">FAQ</div>
+            <h2 class="h2">Frequently Asked Questions</h2>
+            <p class="lead">Common questions about our interior design services and process.</p>
+          </div>
+
+          <div class="container faq" data-accordion>
+            <button class="qa" type="button" aria-expanded="false">
+              <span class="qa__q">What is the typical timeline for a residential design project?</span>
+              <span class="qa__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="qa__a" hidden>
+              Timelines vary by scope. Most residential projects take 6–12 weeks from kickoff through installation, including concept, revisions, procurement, and styling.
+            </div>
+
+            <button class="qa" type="button" aria-expanded="false">
+              <span class="qa__q">How does your pricing structure work?</span>
+              <span class="qa__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="qa__a" hidden>
+              We offer project-based proposals and hourly consulting depending on needs. After an initial consult, we provide a transparent scope, milestones, and fees.
+            </div>
+
+            <button class="qa" type="button" aria-expanded="false">
+              <span class="qa__q">Do you work with clients remotely?</span>
+              <span class="qa__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="qa__a" hidden>
+              Yes. We support hybrid and remote workflows using curated samples, digital presentations, and regular video check-ins to keep decisions moving.
+            </div>
+
+            <button class="qa" type="button" aria-expanded="false">
+              <span class="qa__q">What design styles do you specialize in?</span>
+              <span class="qa__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="qa__a" hidden>
+              We’re best known for warm minimalism, contemporary, and modern classic—always grounded in function and tailored to your home and lifestyle.
+            </div>
+
+            <button class="qa" type="button" aria-expanded="false">
+              <span class="qa__q">Can you work within my existing budget?</span>
+              <span class="qa__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="qa__a" hidden>
+              Absolutely. We prioritize spend, suggest high-impact upgrades, and provide tiered options so you can choose where to invest.
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact" aria-label="Contact">
+          <div class="container section__head">
+            <div class="kicker">Get in Touch</div>
+            <h2 class="h2">Start Your Design Journey</h2>
+            <p class="lead">
+              Ready to transform your space? Reach out to schedule a consultation or ask us anything about our services.
+            </p>
+          </div>
+
+          <div class="container contact">
+            <form class="form" action="#" method="post">
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label">Full Name</span>
+                  <input class="field__input" type="text" name="name" placeholder="Your name" />
+                </label>
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input class="field__input" type="email" name="email" placeholder="you@example.com" />
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label">Phone</span>
+                  <input class="field__input" type="tel" name="phone" placeholder="(555) 000-0000" />
+                </label>
+                <label class="field">
+                  <span class="field__label">Service</span>
+                  <select class="field__input" name="service">
+                    <option value="" selected disabled>Select a service...</option>
+                    <option>Residential Design</option>
+                    <option>Commercial Design</option>
+                    <option>Hospitality Design</option>
+                    <option>Consulting</option>
+                  </select>
+                </label>
+              </div>
+              <label class="field">
+                <span class="field__label">Message</span>
+                <textarea class="field__input field__textarea" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+              </label>
+              <button class="btn btn--gold btn--pill" type="submit">
+                Send Message <span aria-hidden="true">→</span>
+              </button>
+            </form>
+
+            <aside class="contact__side" aria-label="Contact details">
+              <div class="info">
+                <div class="info__item">
+                  <div class="info__icon">☎</div>
+                  <div>
+                    <div class="info__label">Phone</div>
+                    <div class="info__value">(555) 284-9103</div>
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="info__icon">✉</div>
+                  <div>
+                    <div class="info__label">Email</div>
+                    <div class="info__value">hello@atelierstudio.com</div>
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="info__icon">⌁</div>
+                  <div>
+                    <div class="info__label">Studio</div>
+                    <div class="info__value">55 Design District<br />Miami, FL 33137</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hours">
+                <div class="hours__title">Studio Hours</div>
+                <div class="hours__row"><span>Monday - Friday</span><span>9:00 AM - 6:00 PM</span></div>
+                <div class="hours__row"><span>Saturday</span><span>10:00 AM - 3:00 PM</span></div>
+                <div class="hours__row"><span>Sunday</span><span>Closed</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="cta" aria-label="Call to action" id="blog">
+          <div class="container cta__inner">
+            <div class="cta__bg" role="img" aria-label="Abstract warm background"></div>
+            <h2 class="cta__title">Ready to Transform Your Space?</h2>
+            <p class="cta__text">
+              Schedule a complimentary consultation and let us bring your vision to life. Every extraordinary space begins with a conversation.
+            </p>
+            <div class="cta__buttons">
+              <a class="btn btn--gold btn--pill" href="#contact">Book Consultation <span aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost btn--pill" href="#portfolio">View Portfolio</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" aria-label="Footer">
+        <div class="container footer__grid">
+          <div class="footer__brand">
+            <div class="brand brand--footer">
+              <span class="brand__name">Atelier</span>
+              <span class="brand__sub">STUDIO</span>
+            </div>
+            <p class="footer__text">
+              Award-winning interior design studio transforming spaces into extraordinary experiences. Residential, commercial, and hospitality design in Miami.
+            </p>
+            <div class="footer__small">
+              <span aria-hidden="true">☎</span> (555) 284-9103
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title">Services</div>
+            <a class="footer__link" href="#services">Residential Design</a>
+            <a class="footer__link" href="#services">Commercial Design</a>
+            <a class="footer__link" href="#services">Hospitality Design</a>
+            <a class="footer__link" href="#services">Renovation Management</a>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title">Resources</div>
+            <a class="footer__link" href="#portfolio">Portfolio</a>
+            <a class="footer__link" href="#blog">Design Blog</a>
+            <a class="footer__link" href="#about">Style Guide</a>
+            <a class="footer__link" href="#pricing">Pricing</a>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title">Company</div>
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="#">Careers</a>
+            <a class="footer__link" href="#">Press</a>
+          </div>
+        </div>
+
+        <div class="container footer__bottom">
+          <div>© <span id="year"></span> Atelier Studio. All rights reserved.</div>
+          <div class="footer__social" aria-label="Social links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Dribbble">Dribbble</a>
+          </div>
+        </div>
+      </footer>
+
+      <button class="to-top" type="button" aria-label="Back to top" data-to-top>⌃</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
